@@ -1,0 +1,187 @@
+[
+ {
+   "Challenge": "Collect Lakers 23-24 Set",
+   "XP Given": 2000,
+   "Sticker Reward": "S23-24 Collector"
+ },
+ {
+   "Challenge": "Collect Lakers S4 Set",
+   "XP Given": 3000,
+   "Sticker Reward": "S4 Collector"
+ },
+ {
+   "Challenge": "Collect Lakers S3 Set",
+   "XP Given": 2500,
+   "Sticker Reward": "S3 Collector"
+ },
+ {
+   "Challenge": "Collect Lakers S2 Set",
+   "XP Given": 2000,
+   "Sticker Reward": "S2 Collector"
+ },
+ {
+   "Challenge": "Collect Lakers S1 Set",
+   "XP Given": 6000,
+   "Sticker Reward": "S1 Collector"
+ },
+ {
+   "Challenge": "Collect Lakers Contemporary Set",
+   "XP Given": 4000,
+   "Sticker Reward": "Contemporary Collector"
+ },
+ {
+   "Challenge": "Collect Lakers Full Team Set",
+   "XP Given": 10000,
+   "Sticker Reward": "Full Team Collector"
+ },
+ {
+   "Challenge": "Collect 10 Laker Common Moments from S24-25",
+   "XP Given": 5000,
+   "Sticker Reward": "Lay Up Lines"
+ },
+ {
+   "Challenge": "Collect 5 Laker Rare Moments from S24-25",
+   "XP Given": 10000,
+   "Sticker Reward": "Heating Up"
+ },
+ {
+   "Challenge": "Collect 1 Laker Legendary Moment from S24-25",
+   "XP Given": 50000,
+   "Sticker Reward": "On Fire"
+ },
+ {
+   "Challenge": "Each Flash Challenge",
+   "XP Given": 1500,
+   "Sticker Reward": "N/A"
+ },
+ {
+   "Challenge": "Compete in 5 Role Player Level Flash Challenges",
+   "XP Given": 2000,
+   "Sticker Reward": "Role Player Flash Challenger"
+ },
+ {
+   "Challenge": "Compete in 25 Role Player Level Flash Challenges",
+   "XP Given": 5000,
+   "Sticker Reward": "Role Player Flash Champion"
+ },
+ {
+   "Challenge": "Compete in 82 Role Player Level Flash Challenges",
+   "XP Given": 10000,
+   "Sticker Reward": "Role Player Flash Grinder"
+ },
+ {
+   "Challenge": "Compete in 5 Starting 5 Level Flash Challenges",
+   "XP Given": 5000,
+   "Sticker Reward": "Starting 5 Flash Challenger"
+ },
+ {
+   "Challenge": "Compete in 25 Starting 5 Level Flash Challenges",
+   "XP Given": 12500,
+   "Sticker Reward": "Starting 5 Flash Champion"
+ },
+ {
+   "Challenge": "Compete in 65 Starting 5 Level Flash Challenges",
+   "XP Given": 25000,
+   "Sticker Reward": "Starting 5 Flash Grinder"
+ },
+ {
+   "Challenge": "Compete in 5 MVP Level Flash Challenges",
+   "XP Given": 12500,
+   "Sticker Reward": "MVP Flash Challenger"
+ },
+ {
+   "Challenge": "Compete in 25 MVP Level Flash Challenges",
+   "XP Given": 31250,
+   "Sticker Reward": "MVP Flash Champion"
+ },
+ {
+   "Challenge": "Compete in 50 MVP Level Flash Challenges",
+   "XP Given": 62500,
+   "Sticker Reward": "MVP Flash Grinder"
+ },
+ {
+   "Challenge": "Gift 5 Laker Common moments to LAShowtime for Giveaways",
+   "XP Given": 2000,
+   "Sticker Reward": "Feeling Generous"
+ },
+ {
+   "Challenge": "Gift 25 Laker Common moments to LAShowtime for Giveaways",
+   "XP Given": 5000,
+   "Sticker Reward": "Community Builder"
+ },
+ {
+   "Challenge": "Gift 50 Laker Common moments to LAShowtime for Giveaways",
+   "XP Given": 10000,
+   "Sticker Reward": "Future Philanthropist"
+ },
+ {
+   "Challenge": "Gift 1 Laker Rare moment to LAShowtime for Giveaways",
+   "XP Given": 5000,
+   "Sticker Reward": "Rare Generosity"
+ },
+ {
+   "Challenge": "Gift 5 Laker Rare moments to LAShowtime for Giveaways",
+   "XP Given": 12500,
+   "Sticker Reward": "The People's Champion"
+ },
+ {
+   "Challenge": "Gift 20 Laker Rare moments to LAShowtime for Giveaways",
+   "XP Given": 25000,
+   "Sticker Reward": "Collector's Tribute"
+ },
+ {
+   "Challenge": "Gift 1 Laker Legendary moment to LAShowtime for Giveaways",
+   "XP Given": 25000,
+   "Sticker Reward": "Legendary Giver"
+ },
+ {
+   "Challenge": "Gift 2 Laker Legendary moments to LAShowtime for Giveaways",
+   "XP Given": 62500,
+   "Sticker Reward": "Charity Champ"
+ },
+ {
+   "Challenge": "Gift 3 Laker Legendary moments to LAShowtime for Giveaways",
+   "XP Given": 125000,
+   "Sticker Reward": "Ultimate Donor"
+ },
+ {
+   "Challenge": "Tag LAShowtime on X with a pic wearing Showtime Merch at a Laker Game",
+   "XP Given": 10000,
+   "Sticker Reward": "It's Showtime"
+ },
+ {
+   "Challenge": "Come to an IRL event",
+   "XP Given": 10000,
+   "Sticker Reward": "Social Butterfly"
+ },
+ {
+   "Challenge": "Come to multiple IRL events",
+   "XP Given": 20000,
+   "Sticker Reward": "Event VIP"
+ },
+ {
+   "Challenge": "Unnanounced Contest Participation",
+   "XP Given": 5000,
+   "Sticker Reward": "TBD"
+ },
+ {
+   "Challenge": "Unnanounced Contest Participation",
+   "XP Given": 5000,
+   "Sticker Reward": "TBD"
+ },
+ {
+   "Challenge": "Unnanounced Contest Participation",
+   "XP Given": 5000,
+   "Sticker Reward": "TBD"
+ },
+ {
+   "Challenge": "Unnanounced Contest Participation",
+   "XP Given": 5000,
+   "Sticker Reward": "TBD"
+ },
+ {
+   "Challenge": "Unnanounced Contest Participation",
+   "XP Given": 5000,
+   "Sticker Reward": "TBD"
+ }
+]
