@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .challenges-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #552583;
+            border-radius: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .challenge-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .challenge-table th, .challenge-table td {
+            border: 1px solid #552583;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .challenge-table th {
+            background-color: #552583;
+            color: white;
+        }
+
+        .challenge-table td img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; margin-bottom: 20px;">Challenges</h1>
+    </header>
+    <main>
+        <div class="challenges-container">
+            <table class="challenge-table" id="challengesTable">
+                <thead>
+                    <tr>
+                        <th>Challenge</th>
+                        <th>XP Given</th>
+                        <th>Sticker Reward</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- JavaScript will dynamically generate challenge rows here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container">
+            <a href="index.html" class="button">Back</a>
+        </div>
+    </main>
+    <script>
+        // Fetch the challenge data from a JSON file
+        fetch('challenges.json')
+            .then(response => response.json())
+            .then(data => {
+                const challengesTable = document.getElementById('challengesTable').getElementsByTagName('tbody')[0];
+
+                data.forEach(challengeInfo => {
+                    const challengeRow = document.createElement('tr');
+
+                    // Challenge Name
+                    const challengeNameCell = document.createElement('td');
+                    challengeNameCell.textContent = challengeInfo['Challenge'];
+                    challengeRow.appendChild(challengeNameCell);
+
+                    // XP Given
+                    const xpGivenCell = document.createElement('td');
+                    xpGivenCell.textContent = challengeInfo['XP Given'];
+                    challengeRow.appendChild(xpGivenCell);
+
+                    // Sticker Reward
+                    const stickerRewardCell = document.createElement('td');
+                    stickerRewardCell.textContent = challengeInfo['Sticker Reward'];
+                    challengeRow.appendChild(stickerRewardCell);
+
+                    // Image (Placeholder for now)
+                    const imageCell = document.createElement('td');
+                    const img = document.createElement('img');
+                    img.src = 'placeholder.jpg';
+                    img.alt = 'Challenge Image';
+                    imageCell.appendChild(img);
+                    challengeRow.appendChild(imageCell);
+
+                    challengesTable.appendChild(challengeRow);
+                });
+            })
+            .catch(error => console.error('Error fetching challenges data:', error));
+    </script>
+</body>
+</html>
