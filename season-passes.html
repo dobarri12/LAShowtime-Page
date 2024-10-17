@@ -35,7 +35,7 @@
             background-color: #FDB927;
             display: flex;
             flex-direction: column;
-            justify-content:  space-between;
+            align-items: flex-start;
         }
 
         .pass img {
@@ -50,6 +50,8 @@
             font-size: 1.5rem;
             font-weight: bold;
             color: #552583;
+            text-align: center;
+            width: 100%;
         }
 
         .pass-price {
@@ -57,6 +59,8 @@
             color: #333;
             margin-top: 10px;
             font-weight: bold;
+            text-align: center;
+            width: 100%;
         }
 
         .pass-rewards {
@@ -69,6 +73,25 @@
             list-style: none;
             padding: 0;
             text-align: center;
+        }
+        
+        .mint-button {
+        text-decoration: none;
+        color: inherit;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+        }
+
+        .mint-button-style {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #552583;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
         }
 
         .header-image {
@@ -86,47 +109,54 @@
     <main>
         <div class="passes-container">
             <!-- Role Player Pass -->
-            <a href="#role-player-link" class="pass" style="text-decoration: none; color: inherit;">
                 <div class="pass">
-                <div class="pass-title">Role Player</div>
-                <div class="pass-price">$10</div>
-                <img src="season-pass-RP-badge.jpg" alt="Role Player">
-                <div class="pass-rewards">
-                    <div>Buy now to receive:</div>
-                    <ul>
-                        <li>Access to the Role Player Flash Challenges for each game this season!</li>
-                        <li>Custom Role Player Sticker to add to your Season Pass</li>
-                    </ul>
+                    <div class="pass-title">Role Player</div>
+                    <div class="pass-price">$10</div>
+                    <img src="season-pass-RP-badge.jpg" alt="Role Player">
+                    <a href="#mint-role-player-link" class="mint-button">
+                        <button class="mint-button-style">Mint</button>
+                    </a>
+                    <div class="pass-rewards">
+                        <div>Buy now to receive:</div>
+                            <ul>
+                                <li>Access to the Role Player Flash Challenges for each game this season!</li>
+                                <li>Custom Role Player Sticker to add to your Season Pass</li>
+                            </ul>
+                        </div>  
+                    
                 </div>
-            </div>
-            </a>
             <!-- Starting 5 Pass -->
-            <a href="#starting-5-link" class="pass" style="text-decoration: none; color: inherit;">
                 <div class="pass">
-                <div class="pass-title">Starting 5</div>
-                <div class="pass-price">$25</div>
-                <img src="season-pass-SF-badge.jpg" alt="Starting 5">
-                <div class="pass-rewards">
-                    <div>Buy now to receive:</div>
-                    <ul>
-                        <li>All rewards from the Role Player Pass Plus the following!</li>
-                        <li>27657 XP</li>
-                        <li>3 x Base Set Common 24-25 Laker Moment of Choice</li>
-                        <li>2 x First 2 Game Giveaway Entry</li>
-                        <li>2x XP coin for one week (turn in to get double XP for any challenges completed that week)</li>
-                        <li>1 x Non-Base Set Common 24-25 Laker Moment of Choice</li>
-                        <li>Access to the Starting 5 Flash Challenges for each game this season!</li>
-                        <li>Custom Starting 5 Sticker to add to your Season Pass</li>
-                    </ul>
+                    <div class="pass-title">Starting 5</div>
+                    <div class="pass-price">$25</div>
+                    <img src="season-pass-SF-badge.jpg" alt="Starting 5">
+                    <a href="#mint-role-player-link" class="mint-button">
+                        <button class="mint-button-style">Mint</button>
+                    </a>
+                    <div class="pass-rewards">
+                        <div>Buy now to receive:</div>
+                        <ul>
+                            <li>All rewards from the Role Player Pass Plus the following!</li>
+                            <li>27657 XP</li>
+                            <li>3 x Base Set Common 24-25 Laker Moment of Choice</li>
+                            <li>2 x First 2 Game Giveaway Entry</li>
+                            <li>2x XP coin for one week (turn in to get double XP for any challenges completed that week)</li>
+                            <li>1 x Non-Base Set Common 24-25 Laker Moment of Choice</li>
+                            <li>Access to the Starting 5 Flash Challenges for each game this season!</li>
+                            <li>Custom Starting 5 Sticker to add to your Season Pass</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-            </div>
-            </a>
+            
             <!-- MVP Pass -->
-            <a href="#mvp-link" class="pass" style="text-decoration: none; color: inherit;">
                 <div class="pass">
                     <div class="pass-title">MVP</div>
                     <div class="pass-price">$50</div>
                     <img src="season-pass-base-MVP-badge.jpg" alt="MVP">
+                    <a href="#mint-role-player-link" class="mint-button">
+                        <button class="mint-button-style">Mint</button>
+                    </a>
                 
                     <div class="pass-rewards">
                         <div>Buy now to receive:</div>
@@ -140,6 +170,7 @@
                             <li>Custom MVP Sticker to add to your Season Pass</li>
                         </ul>
                     </div>
+                    
                 </div>
             </a>
         </div>
@@ -149,3 +180,4 @@
     </main>
 </body>
 </html>
+
