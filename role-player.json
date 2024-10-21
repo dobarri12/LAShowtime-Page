@@ -1,0 +1,27 @@
+[
+ {
+   "Player Name": "LeBron James",
+   "Moment Type": "Sub 500 Serial Number",
+   "image": "lebron.jpg"
+ },
+ {
+   "Player Name": "First Basket",
+   "Moment Type": "Rare",
+   "image": "question-mark.jpg"
+ },
+ {
+   "Player Name": "Last Dunk",
+   "Moment Type": "Non Base Set",
+   "image": "question-mark.jpg"
+ },
+ {
+   "Player Name": "Highest FG%",
+   "Moment Type": "Fandom",
+   "image": "question-mark.jpg"
+ },
+ {
+   "Player Name": "Most 3's Made",
+   "Moment Type": "Sub 100 Serial Number",
+   "image": "question-mark.jpg"
+ }
+]
