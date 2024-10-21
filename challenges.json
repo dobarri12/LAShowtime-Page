@@ -44,17 +44,20 @@
  {
    "Challenge": "Collect 10 Laker Common Moments from S24-25",
    "XP Given": 5000,
-   "Sticker Reward": "Lay Up Lines"
+   "Sticker Reward": "Lay Up Lines",
+   "Image": "season-pass-layup.png"
  },
  {
    "Challenge": "Collect 5 Laker Rare Moments from S24-25",
    "XP Given": 10000,
-   "Sticker Reward": "Heating Up"
+   "Sticker Reward": "Heating Up",
+   "Image": "season-pass-heat.png"
  },
  {
    "Challenge": "Collect 1 Laker Legendary Moment from S24-25",
    "XP Given": 50000,
-   "Sticker Reward": "On Fire"
+   "Sticker Reward": "On Fire",
+   "Image": "season-pass-fire.png"
  },
  {
    "Challenge": "Each Flash Challenge",
@@ -138,37 +141,37 @@
    "Challenge": "Gift 1 Laker Rare moment to LAShowtime for Giveaways",
    "XP Given": 5000,
    "Sticker Reward": "Rare Generosity",
-   "Image": "season-pass-giftR-1.png"
+   "Image": "season-pass-base-giftR-1.png"
  },
  {
    "Challenge": "Gift 5 Laker Rare moments to LAShowtime for Giveaways",
    "XP Given": 12500,
    "Sticker Reward": "The People's Champion",
-   "Image": "season-pass-giftR-2.png"
+   "Image": "season-pass-base-giftR-2.png"
  },
  {
    "Challenge": "Gift 20 Laker Rare moments to LAShowtime for Giveaways",
    "XP Given": 25000,
    "Sticker Reward": "Collector's Tribute",
-   "Image": "season-pass-giftR-3.png"
+   "Image": "season-pass-base-giftR-3.png"
  },
  {
    "Challenge": "Gift 1 Laker Legendary moment to LAShowtime for Giveaways",
    "XP Given": 25000,
    "Sticker Reward": "Legendary Giver",
-   "Image": "season-pass-giftL-1.png"
+   "Image": "season-pass-base-giftL-1.png"
  },
  {
    "Challenge": "Gift 2 Laker Legendary moments to LAShowtime for Giveaways",
    "XP Given": 62500,
    "Sticker Reward": "Charity Champ",
-   "Image": "season-pass-giftL-2.png"
+   "Image": "season-pass-base-giftL-2.png"
  },
  {
    "Challenge": "Gift 3 Laker Legendary moments to LAShowtime for Giveaways",
    "XP Given": 125000,
    "Sticker Reward": "Ultimate Donor",
-   "Image": "season-pass-giftL-3.png"
+   "Image": "season-pass-base-giftL-3.png"
  },
  {
    "Challenge": "Tag LAShowtime on X with a pic wearing Showtime Merch at a Laker Game",
@@ -179,12 +182,14 @@
  {
    "Challenge": "Come to an IRL event",
    "XP Given": 10000,
-   "Sticker Reward": "Social Butterfly"
+   "Sticker Reward": "Social Butterfly",
+   "Image": "season-pass-base-IRL-1.png"
  },
  {
    "Challenge": "Come to multiple IRL events",
    "XP Given": 20000,
-   "Sticker Reward": "Event VIP"
+   "Sticker Reward": "Event VIP",
+   "Image": "season-pass-base-IRL-1.png"
  },
  {
    "Challenge": "Unnanounced Contest Participation",
