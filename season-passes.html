@@ -8,102 +8,119 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <style>
-        body {
-            display: block;
-            margin: 0;
-            font-family: Poppins, sans-serif;
-        }
+    body {
+        display: block;
+        margin: 0;
+        font-family: Poppins, sans-serif;
+    }
 
+    .passes-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow passes to wrap on smaller screens */
+        justify-content: space-between;
+        align-items: stretch; /* Stretch to ensure all passes are of equal height */
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .pass {
+        text-align: center;
+        border: 1px solid #552583;
+        border-radius: 10px;
+        padding: 20px;
+        flex: 1 1 calc(33% - 40px); /* Allow three passes per row with space in-between */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #FDB927;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+        height: auto; /* Dynamic height based on content */
+    }
+
+    .pass img {
+        width: 80%;
+        height: auto;
+        max-width: 250px; /* Control maximum width to keep consistent sizing */
+        object-fit: contain; /* Contain the image to prevent distortion */
+        margin: 20px 0;
+    }
+
+    .pass-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #552583;
+        text-align: center;
+        width: 100%;
+    }
+
+    .pass-price {
+        font-size: 1.2rem;
+        color: #333;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+
+    .pass-rewards {
+        font-size: small;
+        color: #333;
+        margin-bottom: 10px; /* Added space between the list and button */
+    }
+
+    .pass-rewards ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .mint-button {
+        text-decoration: none;
+        color: inherit;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mint-button-style {
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #552583;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 80%;
+        font-size: larger;
+    }
+
+    .header-image {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
         .passes-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 40px;
+            flex-direction: column; /* Stack the passes vertically */
+            align-items: center; /* Center align for better spacing */
         }
-
-        
 
         .pass {
-            text-align: center;
-            border: 1px solid #552583;
-            border-radius: 10px;
-            padding: 20px;
-            flex: 1 1 5%;
-            height: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #FDB927;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            width: 90%; /* Reduce width to fit mobile screens */
+            margin-bottom: 20px;
         }
-
-        .pass img {
-            width: 100%;
-            height: auto;
-            max-height: 100%;
-            object-fit: cover;
-            margin: 20px 0;
-        }
-
-        .pass-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #552583;
-            text-align: center;
-            width: 100%;
-        }
-
-        .pass-price {
-            font-size: 1.2rem;
-            color: #333;
-            margin-top: 10px;
-            font-weight: bold;
-            text-align: center;
-            width: 100%;
-        }
-
-        .pass-rewards {
-            font-size: small;
-            color: #333;
-            
-        }
-
-        .pass-rewards ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        
-        .mint-button {
-            text-decoration: none;
-            color: inherit;
-            width: 100%;
-            text-align: center;
-            padding-bottom: 15px;
-            }
 
         .mint-button-style {
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #552583;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-            font-size: larger;
+            font-size: medium; /* Adjust button text size */
         }
+    }
+</style>
 
-        .header-image {
-            width: 50%;
-            height: 50%;
-            object-fit: cover;
-        }
-
-    </style>
 </head>
 <body>
     <header>
