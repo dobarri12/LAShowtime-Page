@@ -69,6 +69,12 @@
             margin-bottom: 10px;
         }
 
+        .play-category {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
         .player-name {
             font-size: 1.2rem;
             font-weight: bold;
@@ -126,6 +132,13 @@
                     data.forEach(challenge => {
                         const flashChallengeCard = document.createElement('div');
                         flashChallengeCard.classList.add('flash-challenge-card');
+
+
+                        // Play Category
+                        const playCategory = document.createElement('div');
+                        playCategory.classList.add('play-category');
+                        playCategory.textContent = challenge['Play Category'];
+                        flashChallengeCard.appendChild(playCategory);
 
                         // Player Name
                         const playerName = document.createElement('div');
