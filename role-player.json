@@ -1,27 +1,20 @@
 [
  {
+   "Play Category": "Field Goals Made",
    "Player Name": "???",
-   "Moment Type": "???",
+   "Moment Type": "Rippled",
    "image": "question-mark.jpg"
  },
  {
+   "Play Category": "Last Steal",
    "Player Name": "???",
-   "Moment Type": "???",
+   "Moment Type": "Sub 500 Serial",
    "image": "question-mark.jpg"
  },
  {
+   "Play Category": "Last Field Goal Made",
    "Player Name": "???",
-   "Moment Type": "???",
-   "image": "question-mark.jpg"
- },
- {
-   "Player Name": "???",
-   "Moment Type": "???",
-   "image": "question-mark.jpg"
- },
- {
-   "Player Name": "???",
-   "Moment Type": "???",
+   "Moment Type": "S3",
    "image": "question-mark.jpg"
  }
 ]
