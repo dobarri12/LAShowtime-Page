@@ -1,172 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flash Challenges</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<html>
+  <head>
+    <title>Tonight's LA Showtime Flash Challenges</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            display: block;
-            margin: 0;
-            font-family: Poppins, sans-serif;
-            background-color: #f0f0f0;
-        }
+        /* Import Roboto Flex from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..900&display=swap');
 
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #552583;
-            color: white;
-        }
+      /* Lakers Color Scheme */
+      body {
+        font-family: 'Roboto Flex', Arial, sans-serif;
+        background-color: #552583; /* Lakers Purple */
+        color: #FDB927; /* Lakers Gold */
+        margin: 0;
+        padding: 0;
+      }
 
-        .buttons-container {
-            text-align: center;
-            margin: 20px;
-        }
+      h1 {
+        text-align: center;
+        color: #FDB927; /* Lakers Gold */
+        padding: 20px;
+      }
 
-        .level-button {
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #552583;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
+      .challenge {
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #301A4B; /* Darker Purple for contrast */
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
 
-        .flash-challenges-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            overflow-y: auto;
-        }
+      .challenge h2 {
+        color: #FDB927; /* Lakers Gold */
+        border-bottom: 2px solid #FDB927;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
 
-        .flash-challenge-card {
-            background-color: black;
-            width: 18%;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 10px;
-            text-align: center;
-            color: white;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
 
-        .flash-challenge-card img {
-            width: 100%;
-            height: auto;
-            max-height: 200px;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
+      th, td {
+        border: 1px solid #FDB927; /* Lakers Gold Border */
+        padding: 8px;
+        text-align: left;
+      }
 
-        .play-category {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+      th {
+        background-color: #FDB927; /* Lakers Gold */
+        color: #552583; /* Lakers Purple Text */
+      }
 
-        .player-name {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+      td {
+        background-color: #FFFFFF; /* White background for readability */
+        color: #552583; /* Lakers Purple Text */
+      }
 
-        .moment-type {
-            font-size: 1rem;
-            margin-top: 10px;
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Add some responsive behavior */
+      @media (max-width: 768px) {
+        .challenge {
+          margin: 10px;
+          padding: 10px;
         }
+      }
     </style>
-</head>
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-65PM5DJY5X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  </head>
+  <body>
+    <h1>Tonight's Flash Challenges</h1>
+    <div id="challenges">
+      <!-- Challenge tables will be inserted here dynamically -->
+    </div>
 
-  gtag('config', 'G-65PM5DJY5X');
-</script>
-<body>
-    <header>
-        <h1>Flash Challenges</h1>
-    </header>
-    <main>
-        <!-- Buttons to switch between challenge levels -->
-        <div class="buttons-container">
-            <button class="level-button" onclick="loadChallenges('role-player.json')">Role Player</button>
-            <button class="level-button" onclick="loadChallenges('starting-5.json')">Starting 5</button>
-            <button class="level-button" onclick="loadChallenges('mvp.json')">MVP</button>
-        </div>
-
-        <!-- Flash Challenges Container -->
-        <div class="flash-challenges-container" id="flashChallengesContainer">
-            <!-- JavaScript will dynamically generate flash challenge cards here -->
-        </div>
-        <div class="button-container">
-            <a href="https://discord.com/channels/606111887876292622/1035642386111541428" target="_blank" class="button">Sumbit Flash Challenge Showcase</a>
-        </div>
-        <div class="button-container">
-            <a href="index.html" class="button">Back</a>
-        </div>
-
-    </main>
+    <div class="button-container">
+        <a href="index.html" class="button">Back</a>
+    </div>
+    
     <script>
-        // Function to load challenges from a JSON file
-        function loadChallenges(jsonFile) {
-            fetch(jsonFile)
-                .then(response => response.json())
-                .then(data => {
-                    const flashChallengesContainer = document.getElementById('flashChallengesContainer');
-                    flashChallengesContainer.innerHTML = ''; // Clear existing content
 
-                    data.forEach(challenge => {
-                        const flashChallengeCard = document.createElement('div');
-                        flashChallengeCard.classList.add('flash-challenge-card');
+        const playerPhotos = {
+            "Anthony Davis":"https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203076.png",
+            "Dalton Knecht":"https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1642261.png",
+            "Max Christie":"https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631108.png",
+            "LeBron James":"https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2544.png",
+            "Austin Reaves":"https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630559.png",
+            "D'Angelo Russell":"https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626156.png",
+            "Gabe Vincent":"https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629216.png",
+            "Rui Hachimura": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629060.png",
+            "Jaxson Hayes": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629637.png",
+            "Jalen Hood-Schifino": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1641720.png",
+            "Bronny James": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1642355.png",
+            "Christian Koloko": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631132.png",
+            "Cam Reddish": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629629.png",
+            "Jarred Vanderbilt": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629020.png",
+            "Christian Wood": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626174.png"
+        };
+      
+          fetch("https://script.google.com/macros/s/AKfycbywanBoOkwJ9lAjSHjH2tG8G_68BM_PWHl8I8TO92rK19mXEHXGTlllhjp-pZlqWKhibw/exec")
+            .then(response => response.json())
+            .then(data => {
+                const challengesDiv = document.getElementById("challenges");
 
+                data.forEach(challenge => {
+                    // Create a section for each challenge
+                    const challengeDiv = document.createElement("div");
+                    challengeDiv.classList.add("challenge");
 
-                        // Play Category
-                        const playCategory = document.createElement('div');
-                        playCategory.classList.add('play-category');
-                        playCategory.textContent = challenge['Play Category'];
-                        flashChallengeCard.appendChild(playCategory);
+                    // Add the challenge name
+                    const title = document.createElement("h2");
+                    title.textContent = challenge.name;
+                    challengeDiv.appendChild(title);
 
-                        // Player Name
-                        const playerName = document.createElement('div');
-                        playerName.classList.add('player-name');
-                        playerName.textContent = challenge['Player Name'];
-                        flashChallengeCard.appendChild(playerName);
+                    // Add a table for the moments
+                    const table = document.createElement("table");
+                    const thead = document.createElement("thead");
+                    thead.innerHTML = `
+                    <tr>
+                        <th>Moment Needed</th>
+                        <th>Current Leader</th>
+                        <th></th>
+                    </tr>
+                    `;
+                    table.appendChild(thead);
 
-                        // Image
-                        const img = document.createElement('img');
-                        img.src = challenge['image'];
-                        img.alt = `${challenge['Player Name']} Moment Image`;
-                        flashChallengeCard.appendChild(img);
+                    const tbody = document.createElement("tbody");
+                    challenge.moments.forEach(moment => {
+                        const row = document.createElement("tr");
 
-                        // Moment Type
-                        const momentType = document.createElement('div');
-                        momentType.classList.add('moment-type');
-                        momentType.textContent = challenge['Moment Type'];
-                        flashChallengeCard.appendChild(momentType);
+                        if (moment.moment.includes("Wildcard")) {
+                            // Wildcard logic: span the entire row
+                            row.innerHTML = `
+                            <td colspan="3" style="text-align: center; font-style: italic; background-color: #301A4B; color: #FDB927;">
+                                ${moment.moment}
+                            </td>
+                            `;
+                        } else {
+                        // Get player name and image
+                        const playerName = moment.leader || "No Leader";
+                        const playerImage = playerPhotos[playerName]
 
-                        flashChallengesContainer.appendChild(flashChallengeCard);
+                        row.innerHTML = `
+                            <td>${moment.moment}</td>
+                            <td>${playerName}</td>
+                            <td><img src="${playerImage}" alt="${playerName}" /></td>
+                        `;
+                        }
+
+                        tbody.appendChild(row);
                     });
-                })
-                .catch(error => console.error('Error fetching flash challenge data:', error));
-        }
+                    table.appendChild(tbody);
 
-        // Load default challenges (Role Player) on page load
-        window.onload = () => loadChallenges('role-player.json');
+                    challengeDiv.appendChild(table);
+                    challengesDiv.appendChild(challengeDiv);
+                });
+            })
+        .catch(error => console.error("Error fetching challenges:", error));
     </script>
-</body>
+  </body>
 </html>
